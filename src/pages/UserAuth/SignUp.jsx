@@ -56,7 +56,10 @@ export function SignUp() {
       if (err.response) {
         alert(err.response.data.message);
       } else {
-        alert("Network error.");
+        {
+          setSubmitted(false);
+          setError("error while submiting");
+        }
       }
     }
   };

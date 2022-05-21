@@ -47,12 +47,11 @@ export function SignIn() {
       setUser(user);
       history.replace("/user/dashboard");
     } catch (err) {
-      setSubmitted(false);
-      setError("error while submiting");
       if (err.response) {
         setError(err.response.data.message);
       } else {
-        alert("Network error.");
+        setSubmitted(false);
+        setError("error while submiting");
       }
     }
   };
