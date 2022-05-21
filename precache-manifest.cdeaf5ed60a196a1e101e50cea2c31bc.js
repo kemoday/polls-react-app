@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f4c0db3f9ffa9bc765a0781fe1c72671",
+    "revision": "1a673bb1f91b5a40852580b13289e9fc",
     "url": "/polls-react-app/index.html"
   },
   {
