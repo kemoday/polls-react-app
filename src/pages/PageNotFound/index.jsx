@@ -16,7 +16,12 @@ export const PageNotFound = () => {
             NOT FOUND
           </h1>
           <p>we are sorry the page you requested cannot be found.</p>
-          <Link to="/">BACK TO HOME</Link>
+          <Link
+            className="mt-4 block text-center bg-[#15b4a6] hover:bg-[#283e47] text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-500"
+            to="/"
+          >
+            GO TO HOME PAGE
+          </Link>
         </div>
       </div>
     </div>
