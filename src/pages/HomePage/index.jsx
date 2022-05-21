@@ -48,7 +48,7 @@ export const HomePage = () => {
         <img
           className="sm:mt-4 lg:w-2/3 lg:ml-8 animate-pulse"
           src={heroImage}
-          alt=""
+          alt="Polls App"
         />
       </div>
     </div>

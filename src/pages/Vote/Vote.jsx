@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { ThankYou } from "../../pages/ThankYou/ThankYou";
-import { VotePage } from "./VotePage/VotePage";
+import { ThankYou } from "../ThankYou";
+import { VotePage } from "./VotePage";
 import { PageNotFound } from "../PageNotFound";
 import "./styles/main.css";
 
