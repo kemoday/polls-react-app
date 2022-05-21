@@ -46,6 +46,7 @@ export function SignUp() {
     setSubmitted(true);
     if (name === "" || email === "" || password === "") {
       setError("All field are required");
+      setSubmitted(false);
       return;
     }
     try {

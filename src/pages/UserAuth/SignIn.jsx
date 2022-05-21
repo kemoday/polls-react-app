@@ -40,6 +40,7 @@ export function SignIn() {
     setSubmitted(true);
     if (email === "" || password === "") {
       setError("All field are required");
+      setSubmitted(false);
       return;
     }
     try {
@@ -90,6 +91,7 @@ export function SignIn() {
                 Email
               </label>
               <input
+                required
                 value={email}
                 onChange={handleEmail}
                 type="text"
@@ -105,6 +107,7 @@ export function SignIn() {
                 Password
               </label>
               <input
+                required
                 value={password}
                 onChange={handlePassword}
                 type="password"
