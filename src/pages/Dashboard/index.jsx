@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { LoaddingPolls } from "./components/LoaddingPolls";
 import { PollsSearch } from "./components/PollsSearch";
-import { ErrorPage } from "./../ErrorPage/ErrorPage";
+import { ErrorPage } from "../ErrorPage/ErrorPage";
 import { PollsTableHeader } from "./components/PollsTableHeader";
 import { PollsList } from "./components/PollsList";
 import { UserContext } from "../../Context/UserContextProvider";

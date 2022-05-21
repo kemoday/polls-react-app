@@ -10,7 +10,11 @@ export const PrivateRoute = ({ component: Component, ...rest }) => {
     <Route
       {...rest}
       render={(props) =>
-        user ? <Component {...props} /> : <Redirect to="/user/not-authorize" />
+        user !== null ? (
+          <Component {...props} />
+        ) : (
+          <Redirect to="/user/account/signin" />
+        )
       }
     />
   );

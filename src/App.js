@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Route, Switch } from "react-router-dom";
 import { PageNotFound } from "./pages/PageNotFound/";
 import { NavBar } from "./pages/components/NavBar/NavBar";
-import { Route, Switch } from "react-router-dom";
 import { Vote } from "./pages/Vote/Vote";
-import { HomePage } from "./pages/Home/HomePage";
-import { AddPoll } from "./pages/AddPoll/AddPoll";
-import { Dashboard } from "./pages/Dashboard/Dashboard.jsx";
+import { HomePage } from "./pages/HomePage";
+import { AddPoll } from "./pages/AddPoll";
+import { Dashboard } from "./pages/Dashboard/";
 import { UserAuth } from "./pages/UserAuth/";
 import { userInfo } from "./API/user-api";
 import { UserContext } from "./Context/UserContextProvider";
-import { useEffect } from "react";
+import { PrivateRoute } from "./pages/components/Routes/PrivateRoute.jsx";
+import { PublicRoute } from "./pages/components/Routes/PublicRoute.jsx";
 
 export const App = () => {
   // context api
@@ -24,10 +25,10 @@ export const App = () => {
         <NavBar />
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/user/dashboard/" component={Dashboard} />
-          <Route exact path="/polls/add" component={AddPoll} />
           <Route exact path="/polls-react-app" component={HomePage} />
-          <Route exact path="/user/account/*" component={UserAuth} />
+          <PrivateRoute exact path="/user/dashboard/" component={Dashboard} />
+          <PrivateRoute exact path="/polls/add" component={AddPoll} />
+          <PublicRoute exact path="/user/account/*" component={UserAuth} />
           <Route component={PageNotFound} />
         </Switch>
       </Route>
