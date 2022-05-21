@@ -1,0 +1,48 @@
+.add-poll .content-wrapper {
+  padding: 1rem;
+}
+
+.add-poll .content-wrapper h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.add-poll .content-wrapper form {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.add-poll .content-wrapper form #title,
+.add-poll .content-wrapper form #question,
+.add-poll .content-wrapper form #option {
+  background-color: #fefefe;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.add-poll .content-wrapper form #title:focus, .add-poll .content-wrapper form #title:hover,
+.add-poll .content-wrapper form #question:focus,
+.add-poll .content-wrapper form #question:hover,
+.add-poll .content-wrapper form #option:focus,
+.add-poll .content-wrapper form #option:hover {
+  border-radius: 20px;
+  border: 1px solid #333;
+  outline: none;
+  background-color: white;
+}
+
+.add-poll .content-wrapper form #question {
+  resize: vertical;
+}
+/*# sourceMappingURL=main.css.map */

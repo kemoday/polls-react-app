@@ -1,0 +1,33 @@
+@import "./../../../../styles/vars";
+
+.page-error {
+  width: 100vw;
+  height: 100vh;
+  @include flexCenter();
+  .wrapper {
+    @include flexCenter();
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    flex-direction: column;
+    i {
+      font-size: 15rem;
+      color: $primaryColor;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+    p {
+      margin: 0;
+    }
+    button {
+      margin-top: 1rem;
+      @include resetButton();
+      background-color: $primaryColor;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+  }
+}

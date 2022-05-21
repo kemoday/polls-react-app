@@ -1,0 +1,21 @@
+.thanks-wrapper {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.thanks-wrapper li {
+  padding: 2rem;
+  color: white;
+  font-size: 1.5rem;
+  background-color: yellowgreen;
+  border-radius: 50%;
+}
+
+.thanks-wrapper h1 {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

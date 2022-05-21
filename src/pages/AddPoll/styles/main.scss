@@ -1,0 +1,38 @@
+.add-poll {
+  .content-wrapper {
+    padding: 1rem;
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+    form {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      #title,
+      #question,
+      #option {
+        background-color: #fefefe;
+        margin: 0.5rem 0;
+        padding: 1rem;
+        border-radius: 20px;
+        border: 1px solid #ddd;
+        &:focus,
+        &:hover {
+          border-radius: 20px;
+          border: 1px solid #333;
+          outline: none;
+          background-color: white;
+        }
+      }
+      #question {
+        resize: vertical;
+      }
+    }
+  }
+  @media screen and (min-width: 750px) {
+  }
+}

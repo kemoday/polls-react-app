@@ -1,0 +1,151 @@
+@import "./.././../../styles/vars";
+.dashboard-page {
+  margin: 1rem;
+  h1 {
+    font-size: 2rem;
+  }
+  .search-wrapper {
+    display: flex;
+    input {
+      flex: 4;
+    }
+    a {
+      flex: 1;
+      text-decoration: none;
+      transition-duration: 0.5s;
+      background-color: #6cad8a;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      margin-left: 1rem;
+      border-radius: 5px;
+      font-weight: 600;
+      border: none;
+      color: white;
+      outline: none;
+      &:hover {
+        background-color: #4fce8a;
+      }
+    }
+  }
+  .all-polls {
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      border-bottom: 2px solid #6cad8a;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    @include line();
+  }
+  .polls-header {
+    @include line();
+    padding: 0.5rem 0;
+    ul {
+      margin: 0;
+      padding-left: 0;
+      display: flex;
+      li {
+        list-style: none;
+      }
+    }
+
+    header {
+      position: sticky;
+      width: 100%;
+      display: flex;
+      padding: 0.5rem 0;
+      ul {
+        &:nth-child(1) {
+          flex: 1;
+          user-select: none;
+          input {
+            margin-right: 0.5rem;
+          }
+          label {
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+        &:nth-child(2) {
+          li {
+            text-align: center;
+            button {
+              width: 80px;
+              font-weight: 600;
+              background: transparent;
+              margin: 0 0.5rem;
+              border: none;
+              cursor: pointer;
+              &:hover {
+                color: #4fce8a;
+              }
+              &:disabled {
+                color: black;
+                cursor: not-allowed;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .polls-wrapper {
+    padding: 0.5rem 0;
+    ul {
+      margin: 0;
+      padding-left: 0;
+      display: flex;
+      li {
+        list-style: none;
+      }
+    }
+    article {
+      @include line();
+      .content {
+        width: 100%;
+        display: flex;
+        padding: 0.8rem 0;
+        ul {
+          &:nth-child(1) {
+            flex: 1;
+            user-select: none;
+            input {
+              margin-right: 0.5rem;
+            }
+          }
+          &:nth-child(2) {
+            li {
+              padding: 0 0.4rem;
+              text-align: center;
+              width: 80px;
+              margin: 0 0.5rem;
+              button {
+                background-color: transparent;
+                outline: none;
+                cursor: pointer;
+                border: none;
+                &:active {
+                  color: #ddd;
+                }
+                .fa-angle-down {
+                  padding: 5px 7px;
+                  border-radius: 50%;
+                  &:active {
+                    background-color: #ddd;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      section {
+        background-color: rgba(238, 238, 238, 0.8);
+        border-radius: 5px;
+        margin: 0 0.5rem;
+        margin-bottom: 5px;
+        padding: 1rem;
+      }
+    }
+  }
+}

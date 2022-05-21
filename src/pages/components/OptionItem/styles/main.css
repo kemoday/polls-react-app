@@ -1,0 +1,52 @@
+.option-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.option-item input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.option-item .btns-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.option-item .btns-wrapper button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 1rem 1.1rem;
+  border: 1px solid #ddd;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #eb4411;
+}
+
+.option-item .btns-wrapper button:first-child {
+  margin: 1rem;
+  color: #6cad8a;
+}
+
+.option-item .btns-wrapper button:first-child:hover {
+  background-color: #6cad8a;
+  color: white;
+}
+
+.option-item .btns-wrapper button:hover {
+  background-color: #eb4411;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

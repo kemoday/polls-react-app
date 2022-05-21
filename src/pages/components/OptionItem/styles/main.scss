@@ -1,0 +1,33 @@
+@import "./../../../../../styles/vars";
+
+.option-item {
+  display: flex;
+  input {
+    flex: 1;
+    align-self: center;
+  }
+  .btns-wrapper {
+    display: flex;
+    align-items: center;
+    button {
+      @include resetButton();
+      border-radius: 50%;
+      padding: 1rem 1.1rem;
+      border: 1px solid #ddd;
+      transition-duration: 0.5s;
+      &:first-child {
+        margin: 1rem;
+        color: #6cad8a;
+        &:hover {
+          background-color: #6cad8a;
+          color: white;
+        }
+      }
+      color: rgb(235, 68, 17);
+      &:hover {
+        background-color: rgb(235, 68, 17);
+        color: white;
+      }
+    }
+  }
+}

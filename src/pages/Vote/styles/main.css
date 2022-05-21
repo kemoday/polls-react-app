@@ -1,0 +1,8 @@
+.vote-page {
+  background-image: url("./../images/vote.jpg");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

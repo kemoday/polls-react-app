@@ -1,0 +1,55 @@
+.vote-wrapper {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.vote-wrapper h1 {
+  font-size: 2rem;
+}
+
+.vote-wrapper p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.vote-wrapper form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.vote-wrapper form label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+
+.vote-wrapper form input {
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+.vote-wrapper form #vote {
+  background-color: #6cad8a;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.vote-wrapper form #vote:hover {
+  background-color: yellowgreen;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,44 @@
+@import "./../../../../styles//vars";
+
+.page-not-found {
+  width: 100vw;
+  height: 100vh;
+  @include flexCenter();
+  .wrapper {
+    padding: 5rem;
+    padding-left: 0;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    .not-found-hero {
+      transform: rotate(-90deg);
+      flex: 1;
+      @include flexCenter();
+      h1 {
+        font-size: 15rem;
+        margin: 0;
+        padding: 0;
+        color: $primaryColor;
+      }
+    }
+    .not-found-text {
+      flex: 1;
+      h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        margin: 0;
+      }
+      p {
+        font-weight: 600;
+      }
+      a {
+        @include resetButton();
+        text-decoration: none;
+        background-color: $primaryColor;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+      }
+    }
+  }
+}

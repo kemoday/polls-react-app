@@ -1,0 +1,18 @@
+$primaryColor: #6cad8a;
+$secondaryColor: #4fce8a;
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin resetButton {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+@mixin line {
+  border-bottom: 1px solid #ddd;
+}

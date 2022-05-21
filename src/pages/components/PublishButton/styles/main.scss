@@ -1,0 +1,22 @@
+@import "./../../../../../styles/vars";
+
+#publish {
+  width: 150px;
+  margin: 0 auto;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: $primaryColor;
+  padding: 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  outline: none;
+  li {
+    margin: 0 10px;
+  }
+  &:hover {
+    background-color: $secondaryColor;
+  }
+}

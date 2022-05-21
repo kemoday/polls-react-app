@@ -1,0 +1,24 @@
+#publish {
+  width: 150px;
+  margin: 0 auto;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: #6cad8a;
+  padding: 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+#publish li {
+  margin: 0 10px;
+}
+
+#publish:hover {
+  background-color: #4fce8a;
+}
+/*# sourceMappingURL=main.css.map */

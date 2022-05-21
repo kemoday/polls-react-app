@@ -1,0 +1,59 @@
+.page-error {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-error .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-error .wrapper i {
+  font-size: 15rem;
+  color: #6cad8a;
+}
+
+.page-error .wrapper h2 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.page-error .wrapper p {
+  margin: 0;
+}
+
+.page-error .wrapper button {
+  margin-top: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-color: #6cad8a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=main.css.map */

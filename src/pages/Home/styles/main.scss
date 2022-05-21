@@ -1,0 +1,57 @@
+@import "./../../../styles/vars";
+
+.home-page {
+  background: rgb(230, 235, 232);
+  background: linear-gradient(
+    0deg,
+    rgba(230, 235, 232, 1) 0%,
+    rgb(114, 112, 112) 100%
+  );
+  position: fixed;
+  left: 0;
+  flex: 1;
+  padding: 1rem;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  .intro {
+    color: white;
+    flex: 1;
+    padding: 1rem;
+    h1 {
+      font-size: 3rem;
+      li {
+        font-size: 3rem;
+        color: white;
+      }
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .auth-btn {
+      li a {
+        margin-left: 0;
+      }
+    }
+  }
+  .hero {
+    flex: 1;
+    img {
+      width: 100%;
+      animation: floatingHero 2s ease-in-out 0s infinite forwards alternate;
+      transform: scale(0.7);
+    }
+  }
+}
+
+@keyframes floatingHero {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 2rem;
+  }
+}

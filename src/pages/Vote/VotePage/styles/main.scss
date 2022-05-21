@@ -1,0 +1,42 @@
+.vote-wrapper {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  form {
+    width: 80%;
+    margin: 0 auto;
+    label {
+      user-select: none;
+      cursor: pointer;
+      margin: 0 0.5rem;
+      font-weight: 600;
+    }
+    input {
+      cursor: pointer;
+      margin: 0.5rem 0;
+    }
+    #vote {
+      background-color: #6cad8a;
+      transition-duration: 0.5s;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin-top: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: white;
+      outline: none;
+      border: none;
+      &:hover {
+        background-color: yellowgreen;
+      }
+    }
+  }
+}
