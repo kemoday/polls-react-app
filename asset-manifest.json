@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/polls-react-app/static/css/main.adc8e47b.chunk.css",
-    "main.js": "/polls-react-app/static/js/main.b8267d58.chunk.js",
-    "main.js.map": "/polls-react-app/static/js/main.b8267d58.chunk.js.map",
+    "main.js": "/polls-react-app/static/js/main.6bb68674.chunk.js",
+    "main.js.map": "/polls-react-app/static/js/main.6bb68674.chunk.js.map",
     "runtime-main.js": "/polls-react-app/static/js/runtime-main.bce9fcdc.js",
     "runtime-main.js.map": "/polls-react-app/static/js/runtime-main.bce9fcdc.js.map",
-    "static/js/2.193bfaf1.chunk.js": "/polls-react-app/static/js/2.193bfaf1.chunk.js",
-    "static/js/2.193bfaf1.chunk.js.map": "/polls-react-app/static/js/2.193bfaf1.chunk.js.map",
+    "static/js/2.fa4a47d4.chunk.js": "/polls-react-app/static/js/2.fa4a47d4.chunk.js",
+    "static/js/2.fa4a47d4.chunk.js.map": "/polls-react-app/static/js/2.fa4a47d4.chunk.js.map",
     "index.html": "/polls-react-app/index.html",
-    "precache-manifest.33ad6e2c404367b09e679c44c846d808.js": "/polls-react-app/precache-manifest.33ad6e2c404367b09e679c44c846d808.js",
+    "precache-manifest.fabb74810d2d81bd28e1437cbda49c06.js": "/polls-react-app/precache-manifest.fabb74810d2d81bd28e1437cbda49c06.js",
     "service-worker.js": "/polls-react-app/service-worker.js",
     "static/css/main.adc8e47b.chunk.css.map": "/polls-react-app/static/css/main.adc8e47b.chunk.css.map",
-    "static/js/2.193bfaf1.chunk.js.LICENSE.txt": "/polls-react-app/static/js/2.193bfaf1.chunk.js.LICENSE.txt",
+    "static/js/2.fa4a47d4.chunk.js.LICENSE.txt": "/polls-react-app/static/js/2.fa4a47d4.chunk.js.LICENSE.txt",
     "static/media/statistics-illustration.png": "/polls-react-app/static/media/statistics-illustration.c149d0ef.png",
     "static/media/main.css": "/polls-react-app/static/media/vote.2a9c6f4c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.bce9fcdc.js",
-    "static/js/2.193bfaf1.chunk.js",
+    "static/js/2.fa4a47d4.chunk.js",
     "static/css/main.adc8e47b.chunk.css",
-    "static/js/main.b8267d58.chunk.js"
+    "static/js/main.6bb68674.chunk.js"
   ]
 }
