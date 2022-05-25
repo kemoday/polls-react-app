@@ -16,7 +16,19 @@ export const App = () => {
   // context api
   const { setUser } = React.useContext(UserContext);
 
-  useEffect(fetchData, []);
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const user = await userInfo();
+        if (user !== "you are not sigen in.") setUser(user);
+      } catch (err) {
+        if (err.response) {
+          //alert(err.response.data.message);
+        }
+      }
+    }
+    fetchData();
+  }, []);
 
   return (
     <Switch>
@@ -35,15 +47,4 @@ export const App = () => {
       <Route component={PageNotFound} />
     </Switch>
   );
-
-  async function fetchData() {
-    try {
-      const user = await userInfo();
-      if (user !== "you are not sigen in.") setUser(user);
-    } catch (err) {
-      if (err.response) {
-        alert(err.response.data.message);
-      }
-    }
-  }
 };

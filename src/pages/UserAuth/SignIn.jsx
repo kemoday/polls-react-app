@@ -48,10 +48,10 @@ export function SignIn() {
       setUser(user);
       history.replace("/user/dashboard");
     } catch (err) {
+      setSubmitted(false);
       if (err.response) {
         setError(err.response.data.message);
       } else {
-        setSubmitted(false);
         setError("error while submiting");
       }
     }

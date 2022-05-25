@@ -1,12 +1,14 @@
 import Axios from "axios";
 
-const apiUrl = "http://localhost:8080";
+const apiUrl = "https://polls-nodejs-backend.herokuapp.com";
 
 export const submitPoll = async (poll) => {
   if (poll) {
     console.log("a poll to submit", poll);
     try {
-      const res = await Axios.post(`${apiUrl}/polls/}`, poll);
+      const res = await Axios.post(`${apiUrl}/polls/}`, poll, {
+        withCredentials: true,
+      });
       return res.data;
     } catch (error) {
       return error;
@@ -19,7 +21,8 @@ export const pollVote = async (poll) => {
     try {
       const res = await Axios.put(
         `${apiUrl}/polls/vote/${poll._id}`,
-        poll.options
+        poll.options,
+        { withCredentials: true }
       );
       return res.data;
     } catch (error) {
@@ -31,7 +34,9 @@ export const pollVote = async (poll) => {
 export const getPoll = async (id) => {
   if (id) {
     try {
-      const res = await Axios.get(`${apiUrl}/polls/${id}`);
+      const res = await Axios.get(`${apiUrl}/polls/${id}`, {
+        withCredentials: true,
+      });
       return res.data;
     } catch (error) {
       throw new ErrorEvent(error);
@@ -43,7 +48,9 @@ export const getPoll = async (id) => {
 export const getUserPolls = async (userId) => {
   if (userId) {
     try {
-      const { data } = await Axios.get(`${apiUrl}/polls/user/${userId}`);
+      const { data } = await Axios.get(`${apiUrl}/polls/user/${userId}`, {
+        withCredentials: true,
+      });
       return data;
     } catch (error) {
       throw new ErrorEvent("Error");
@@ -55,7 +62,9 @@ export const getUserPolls = async (userId) => {
 export const deletePoll = async (pollId) => {
   if (pollId) {
     try {
-      const res = await Axios.delete(`${apiUrl}/polls/${pollId}`);
+      const res = await Axios.delete(`${apiUrl}/polls/${pollId}`, {
+        withCredentials: true,
+      });
       return res.data;
     } catch (error) {
       throw new ErrorEvent(error);

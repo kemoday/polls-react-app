@@ -54,13 +54,11 @@ export function SignUp() {
       setUser(user);
       history.replace("/user/dashboard");
     } catch (err) {
+      setSubmitted(false);
       if (err.response) {
         alert(err.response.data.message);
       } else {
-        {
-          setSubmitted(false);
-          setError("error while submiting");
-        }
+        setError("error while submiting");
       }
     }
   };

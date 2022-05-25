@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/polls-react-app/static/css/main.e6743253.chunk.css",
-    "main.js": "/polls-react-app/static/js/main.74752187.chunk.js",
-    "main.js.map": "/polls-react-app/static/js/main.74752187.chunk.js.map",
+    "main.css": "/polls-react-app/static/css/main.adc8e47b.chunk.css",
+    "main.js": "/polls-react-app/static/js/main.eace5fbc.chunk.js",
+    "main.js.map": "/polls-react-app/static/js/main.eace5fbc.chunk.js.map",
     "runtime-main.js": "/polls-react-app/static/js/runtime-main.bce9fcdc.js",
     "runtime-main.js.map": "/polls-react-app/static/js/runtime-main.bce9fcdc.js.map",
-    "static/js/2.193bfaf1.chunk.js": "/polls-react-app/static/js/2.193bfaf1.chunk.js",
-    "static/js/2.193bfaf1.chunk.js.map": "/polls-react-app/static/js/2.193bfaf1.chunk.js.map",
+    "static/js/2.fa4a47d4.chunk.js": "/polls-react-app/static/js/2.fa4a47d4.chunk.js",
+    "static/js/2.fa4a47d4.chunk.js.map": "/polls-react-app/static/js/2.fa4a47d4.chunk.js.map",
     "index.html": "/polls-react-app/index.html",
-    "precache-manifest.958af7a3c7869c2faa58b37a847cb377.js": "/polls-react-app/precache-manifest.958af7a3c7869c2faa58b37a847cb377.js",
+    "precache-manifest.c61e10d218ff35eb61bee4e9d91b660c.js": "/polls-react-app/precache-manifest.c61e10d218ff35eb61bee4e9d91b660c.js",
     "service-worker.js": "/polls-react-app/service-worker.js",
-    "static/css/main.e6743253.chunk.css.map": "/polls-react-app/static/css/main.e6743253.chunk.css.map",
-    "static/js/2.193bfaf1.chunk.js.LICENSE.txt": "/polls-react-app/static/js/2.193bfaf1.chunk.js.LICENSE.txt",
+    "static/css/main.adc8e47b.chunk.css.map": "/polls-react-app/static/css/main.adc8e47b.chunk.css.map",
+    "static/js/2.fa4a47d4.chunk.js.LICENSE.txt": "/polls-react-app/static/js/2.fa4a47d4.chunk.js.LICENSE.txt",
     "static/media/statistics-illustration.png": "/polls-react-app/static/media/statistics-illustration.c149d0ef.png",
     "static/media/main.css": "/polls-react-app/static/media/vote.2a9c6f4c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.bce9fcdc.js",
-    "static/js/2.193bfaf1.chunk.js",
-    "static/css/main.e6743253.chunk.css",
-    "static/js/main.74752187.chunk.js"
+    "static/js/2.fa4a47d4.chunk.js",
+    "static/css/main.adc8e47b.chunk.css",
+    "static/js/main.eace5fbc.chunk.js"
   ]
 }

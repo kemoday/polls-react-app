@@ -14,30 +14,8 @@
 
 .dashboard-page .search-wrapper input {
   -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-}
-
-.dashboard-page .search-wrapper a {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-decoration: none;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  background-color: #6cad8a;
-  padding: 0.5rem 1rem;
-  text-align: center;
-  margin-left: 1rem;
-  border-radius: 5px;
-  font-weight: 600;
-  border: none;
-  color: white;
-  outline: none;
-}
-
-.dashboard-page .search-wrapper a:hover {
-  background-color: #4fce8a;
+  -ms-flex: 4;
+  flex: 4;
 }
 
 .dashboard-page .all-polls {
@@ -81,12 +59,12 @@
 
 .dashboard-page .polls-header header ul:nth-child(1) {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .dashboard-page .polls-header header ul:nth-child(1) input {
@@ -150,12 +128,12 @@
 
 .dashboard-page .polls-wrapper article .content ul:nth-child(1) {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .dashboard-page .polls-wrapper article .content ul:nth-child(1) input {
@@ -176,16 +154,36 @@
   border: none;
 }
 
-.dashboard-page .polls-wrapper article .content ul:nth-child(2) li button:active {
+.dashboard-page
+  .polls-wrapper
+  article
+  .content
+  ul:nth-child(2)
+  li
+  button:active {
   color: #ddd;
 }
 
-.dashboard-page .polls-wrapper article .content ul:nth-child(2) li button .fa-angle-down {
+.dashboard-page
+  .polls-wrapper
+  article
+  .content
+  ul:nth-child(2)
+  li
+  button
+  .fa-angle-down {
   padding: 5px 7px;
   border-radius: 50%;
 }
 
-.dashboard-page .polls-wrapper article .content ul:nth-child(2) li button .fa-angle-down:active {
+.dashboard-page
+  .polls-wrapper
+  article
+  .content
+  ul:nth-child(2)
+  li
+  button
+  .fa-angle-down:active {
   background-color: #ddd;
 }
 

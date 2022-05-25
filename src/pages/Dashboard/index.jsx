@@ -21,22 +21,33 @@ export const Dashboard = (props) => {
   const fuse = new Fuse([], { keys: ["title"] });
 
   async function fetchData() {
-    if (user?._id !== null) {
+    if (user?._id) {
       setError(false);
       try {
         const polls = await getUserPolls(user._id);
         setUser({ ...user, polls });
         setFPolls(polls);
       } catch (error) {
-        console.log("error while geting the user polls", error);
         setError(true);
       }
     }
   }
 
   useEffect(() => {
-    fetchData();
-  });
+    async function _fetchData() {
+      if (user?._id && !error) {
+        setError(false);
+        try {
+          const polls = await getUserPolls(user._id);
+          setUser({ ...user, polls });
+          setFPolls(polls);
+        } catch (error) {
+          setError(true);
+        }
+      }
+    }
+    _fetchData();
+  }, []);
 
   function onSearchChange(e) {
     setQuery(e.target.value);

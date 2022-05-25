@@ -12,7 +12,13 @@ export const PollsSearch = ({ query, onSearchChange }) => {
         name="search"
         id="search"
       />
-      <Link to="/polls/add">Add Poll</Link>
+      <Link
+        style={{ flex: 1 }}
+        className="bg-[#15b4a6] text-center hover:bg-[#283e47] text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-500"
+        to="/polls/add"
+      >
+        Add Poll
+      </Link>
     </div>
   );
 };
