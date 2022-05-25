@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f766d2f93ede724e8a4327f7c29453fa",
+    "revision": "05b25752004a4f6c44537209f82b49e3",
     "url": "/polls-react-app/index.html"
   },
   {
-    "revision": "dc5623427e9946290b32",
+    "revision": "308d1497103c56e66d31",
     "url": "/polls-react-app/static/css/main.adc8e47b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/polls-react-app/static/js/2.fa4a47d4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dc5623427e9946290b32",
-    "url": "/polls-react-app/static/js/main.6bb68674.chunk.js"
+    "revision": "308d1497103c56e66d31",
+    "url": "/polls-react-app/static/js/main.eace5fbc.chunk.js"
   },
   {
     "revision": "5e91e0916e5b68003f83",
