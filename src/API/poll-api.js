@@ -1,14 +1,12 @@
 import Axios from "axios";
 
-const apiUrl = "https://polls-nodejs-backend.herokuapp.com";
+const apiUrl = "https://polls-nodejs-backend.herokuapp.com/";
+//const apiUrl = "http://localhost:8080";
 
-export const submitPoll = async (poll) => {
-  if (poll) {
-    console.log("a poll to submit", poll);
+export const submitPoll = async (poll, token) => {
+  if (poll && token) {
     try {
-      const res = await Axios.post(`${apiUrl}/polls/}`, poll, {
-        withCredentials: true,
-      });
+      const res = await Axios.post(`${apiUrl}/polls/add/`, { poll, token });
       return res.data;
     } catch (error) {
       return error;
@@ -45,11 +43,12 @@ export const getPoll = async (id) => {
   throw new ErrorEvent("Poll Id Reqired");
 };
 
-export const getUserPolls = async (userId) => {
-  if (userId) {
+export const getUserPolls = async (userId, token) => {
+  if (!token) token = sessionStorage.getItem("token");
+  if (userId && token) {
     try {
-      const { data } = await Axios.get(`${apiUrl}/polls/user/${userId}`, {
-        withCredentials: true,
+      const { data } = await Axios.post(`${apiUrl}/polls/user/${userId}`, {
+        token,
       });
       return data;
     } catch (error) {

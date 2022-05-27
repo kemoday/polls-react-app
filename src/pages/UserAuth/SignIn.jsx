@@ -8,7 +8,7 @@ import { UserContext } from "./../../Context/UserContextProvider";
 
 export function SignIn() {
   // context api
-  const { setUser } = React.useContext(UserContext);
+  const { setUser, setToken } = React.useContext(UserContext);
 
   //handle routing
   const history = useHistory();
@@ -44,8 +44,9 @@ export function SignIn() {
       return;
     }
     try {
-      const user = await signin({ email, password });
+      const { user, token } = await signin({ email, password });
       setUser(user);
+      setToken(token);
       history.replace("/user/dashboard");
     } catch (err) {
       setSubmitted(false);
@@ -116,7 +117,7 @@ export function SignIn() {
               />
             </div>
             <div className="flex mb-2">
-              <p className="">
+              <p>
                 Don't have an account?{" "}
                 <Link
                   to="/user/account/signup"

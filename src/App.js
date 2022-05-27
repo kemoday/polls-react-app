@@ -14,12 +14,13 @@ import { PublicRoute } from "./pages/components/Routes/PublicRoute.jsx";
 
 export const App = () => {
   // context api
-  const { setUser } = React.useContext(UserContext);
+  const { setUser, token, setToken } = React.useContext(UserContext);
 
   useEffect(() => {
+    setToken(sessionStorage.getItem("token"));
     async function fetchData() {
       try {
-        const user = await userInfo();
+        const user = await userInfo(token);
         if (user !== "you are not sigen in.") setUser(user);
       } catch (err) {
         if (err.response) {
@@ -28,7 +29,7 @@ export const App = () => {
       }
     }
     fetchData();
-  }, []);
+  }, [setUser, setToken, token]);
 
   return (
     <Switch>

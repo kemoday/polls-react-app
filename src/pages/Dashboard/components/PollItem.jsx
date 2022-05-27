@@ -19,7 +19,6 @@ export const PollItem = ({ poll }) => {
     deletePoll(pollId)
       .then(() => {
         setItemState({ ...itemState, deleting: false });
-        //dispatch({ type: "DELETE_POLL", payload: pollId });
         setUser({
           ...user,
           polls: user.polls.filter((p) => p._id !== poll._id),
@@ -40,7 +39,11 @@ export const PollItem = ({ poll }) => {
       <div className="content">
         <ul>
           <li>
-            <Link target={"_blank"} to={`/vote/${poll._id}`}>
+            <Link
+              className="font-bold hover:underline"
+              target={"_blank"}
+              to={`/vote/${poll._id}`}
+            >
               {poll.title}{" "}
             </Link>
           </li>

@@ -1,14 +1,15 @@
 import Axios from "axios";
 
-const apiUrl = "https://polls-nodejs-backend.herokuapp.com/";
+const apiUrl = "https://polls-nodejs-backend.herokuapp.com";
+//const apiUrl = "http://localhost:8080/";
 
-export const userInfo = async () => {
+export const userInfo = async (token) => {
   try {
-    const { data } = await Axios.get(`${apiUrl}user/account/user`, {
-      withCredentials: true,
-    });
+    console.log("getting user info");
+    const { data } = await Axios.post(`${apiUrl}user/account/info/`, { token });
     return data;
   } catch (error) {
+    console.log("error");
     throw error;
   }
 };
@@ -16,9 +17,7 @@ export const userInfo = async () => {
 export const signup = async (user) => {
   if (user) {
     try {
-      const { data } = await Axios.post(`${apiUrl}user/account/signup`, user, {
-        withCredentials: true,
-      });
+      const { data } = await Axios.post(`${apiUrl}user/account/signup`, user);
       return data;
     } catch (error) {
       throw error;
@@ -29,23 +28,12 @@ export const signup = async (user) => {
 export const signin = async (user) => {
   if (user) {
     try {
-      const res = await Axios.post(`${apiUrl}user/account/signin`, user, {
-        withCredentials: true,
-      });
+      sessionStorage.getItem("token") && sessionStorage.removeItem("token");
+      const res = await Axios.post(`${apiUrl}user/account/signin`, user);
+      sessionStorage.setItem("token", res.data.token);
       return res.data;
     } catch (error) {
       throw error;
     }
-  }
-};
-
-export const signout = async () => {
-  try {
-    const res = await Axios.put(`${apiUrl}user/account/signout`, {
-      withCredentials: true,
-    });
-    return res.data;
-  } catch (error) {
-    return error;
   }
 };

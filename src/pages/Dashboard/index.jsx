@@ -12,7 +12,7 @@ import "./styles/main.css";
 export const Dashboard = (props) => {
   document.title = "Polls - Dashboard";
 
-  const { user, setUser } = React.useContext(UserContext);
+  const { user, setUser, token } = React.useContext(UserContext);
 
   const [query, setQuery] = useState("");
   const [fPolls, setFPolls] = useState([]);
@@ -21,12 +21,12 @@ export const Dashboard = (props) => {
   const fuse = new Fuse([], { keys: ["title"] });
 
   async function fetchData() {
-    if (user?._id) {
+    if (user?._id && !error) {
       setError(false);
       try {
-        const polls = await getUserPolls(user._id);
-        setUser({ ...user, polls });
-        setFPolls(polls);
+        const polls = await getUserPolls(user._id, token);
+        setUser({ ...user, polls: polls.reverse() });
+        setFPolls(polls.reverse());
       } catch (error) {
         setError(true);
       }
@@ -34,20 +34,26 @@ export const Dashboard = (props) => {
   }
 
   useEffect(() => {
+    let isMounted = true; // note mutable flag
     async function _fetchData() {
       if (user?._id && !error) {
         setError(false);
         try {
-          const polls = await getUserPolls(user._id);
-          setUser({ ...user, polls });
-          setFPolls(polls);
+          const polls = await getUserPolls(user._id, token);
+          if (isMounted) {
+            setUser({ ...user, polls: polls.reverse() });
+            setFPolls(polls.reverse());
+          }
         } catch (error) {
           setError(true);
         }
       }
     }
     _fetchData();
-  }, []);
+    return () => {
+      isMounted = false;
+    };
+  }, [user, token, setUser, error]);
 
   function onSearchChange(e) {
     setQuery(e.target.value);

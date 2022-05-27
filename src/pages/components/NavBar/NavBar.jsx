@@ -3,11 +3,10 @@ import "./styles/main.css";
 import { Link, NavLink } from "react-router-dom";
 import { UserContext } from "../../../Context/UserContextProvider";
 import { useContext } from "react";
-import { signout } from "../../../API/user-api";
 import { useHistory } from "react-router-dom";
 
 export const NavBar = () => {
-  const { user, setUser } = useContext(UserContext);
+  const { user, setUser, setToken } = useContext(UserContext);
   const history = useHistory();
 
   return (
@@ -58,10 +57,10 @@ export const NavBar = () => {
           </NavLink>
           <button
             onClick={(e) => {
-              signout().then(() => {
-                setUser(null);
-                history.push("/user/account/signin");
-              });
+              setUser(null);
+              setToken(null);
+              sessionStorage.removeItem("token");
+              history.push("/user/account/signin");
             }}
             className="py-2 active:text-[#aaa] px-2 text-[#ecebeb] duration-500 hover:bg-[#283e47]"
           >

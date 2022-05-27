@@ -9,7 +9,7 @@ import "./styles/main.css";
 export const AddPoll = () => {
   document.title = "Poll - Add new";
 
-  const { user, setUser } = useContext(UserContext);
+  const { user, setUser, token } = useContext(UserContext);
 
   const [data, setData] = useState({
     title: "",
@@ -85,14 +85,14 @@ export const AddPoll = () => {
       }),
     };
 
-    submitPoll(pollData)
+    submitPoll(pollData, token)
       .then((_data) => {
-        history.push("/user/dashboard");
         setData({ ...data, loadding: false, error: false });
-        setUser({ ...user, polls: user.polls.unshift(_data) });
+        setUser({ ...user, polls: user.polls.push(_data) });
+        history.push("/user/dashboard");
       })
       .catch((err) => {
-        console.log("error while submiting", err);
+        alert("error while submiting", err);
         setData({ ...data, loadding: false });
         setData({ ...data, error: "Error, try again after a few seconds." });
       });
@@ -106,6 +106,7 @@ export const AddPoll = () => {
         </h1>
         <form onSubmit={handleSubmit}>
           <input
+            autoFocus
             onChange={handleDataChange}
             required
             value={data.title}
