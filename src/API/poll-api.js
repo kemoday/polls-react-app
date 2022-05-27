@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-const apiUrl = "https://polls-nodejs-backend.herokuapp.com/";
+const apiUrl = "https://polls-nodejs-backend.herokuapp.com";
 //const apiUrl = "http://localhost:8080";
 
 export const submitPoll = async (poll, token) => {

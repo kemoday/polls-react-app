@@ -41,7 +41,6 @@ export const PollItem = ({ poll }) => {
           <li>
             <Link
               className="font-bold hover:underline"
-              target={"_blank"}
               to={`/vote/${poll._id}`}
             >
               {poll.title}{" "}

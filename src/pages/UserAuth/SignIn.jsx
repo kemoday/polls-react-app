@@ -92,6 +92,7 @@ export function SignIn() {
                 Email
               </label>
               <input
+                defaultValue={"JohnDoe@gmail.com"}
                 required
                 value={email}
                 onChange={handleEmail}
@@ -108,6 +109,7 @@ export function SignIn() {
                 Password
               </label>
               <input
+                defaultValue={"12345678"}
                 required
                 value={password}
                 onChange={handlePassword}

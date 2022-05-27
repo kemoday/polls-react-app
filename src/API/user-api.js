@@ -5,7 +5,6 @@ const apiUrl = "https://polls-nodejs-backend.herokuapp.com/";
 
 export const userInfo = async (token) => {
   try {
-    console.log("getting user info");
     const { data } = await Axios.post(`${apiUrl}user/account/info/`, { token });
     return data;
   } catch (error) {

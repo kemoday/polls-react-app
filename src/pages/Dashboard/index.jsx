@@ -25,8 +25,8 @@ export const Dashboard = (props) => {
       setError(false);
       try {
         const polls = await getUserPolls(user._id, token);
-        setUser({ ...user, polls: polls.reverse() });
-        setFPolls(polls.reverse());
+        setUser({ ...user, polls });
+        setFPolls(polls);
       } catch (error) {
         setError(true);
       }
@@ -41,8 +41,8 @@ export const Dashboard = (props) => {
         try {
           const polls = await getUserPolls(user._id, token);
           if (isMounted) {
-            setUser({ ...user, polls: polls.reverse() });
-            setFPolls(polls.reverse());
+            setUser({ ...user, polls });
+            setFPolls(polls);
           }
         } catch (error) {
           setError(true);
