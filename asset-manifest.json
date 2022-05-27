@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/polls-react-app/static/css/main.adc8e47b.chunk.css",
-    "main.js": "/polls-react-app/static/js/main.88573a3f.chunk.js",
-    "main.js.map": "/polls-react-app/static/js/main.88573a3f.chunk.js.map",
+    "main.js": "/polls-react-app/static/js/main.efce082a.chunk.js",
+    "main.js.map": "/polls-react-app/static/js/main.efce082a.chunk.js.map",
     "runtime-main.js": "/polls-react-app/static/js/runtime-main.bce9fcdc.js",
     "runtime-main.js.map": "/polls-react-app/static/js/runtime-main.bce9fcdc.js.map",
     "static/js/2.0d83341c.chunk.js": "/polls-react-app/static/js/2.0d83341c.chunk.js",
     "static/js/2.0d83341c.chunk.js.map": "/polls-react-app/static/js/2.0d83341c.chunk.js.map",
     "index.html": "/polls-react-app/index.html",
-    "precache-manifest.7785e73db93b00a32efe3194196c2dc4.js": "/polls-react-app/precache-manifest.7785e73db93b00a32efe3194196c2dc4.js",
+    "precache-manifest.520f4dc7dd5d50c8e8fae3a06cc35c24.js": "/polls-react-app/precache-manifest.520f4dc7dd5d50c8e8fae3a06cc35c24.js",
     "service-worker.js": "/polls-react-app/service-worker.js",
     "static/css/main.adc8e47b.chunk.css.map": "/polls-react-app/static/css/main.adc8e47b.chunk.css.map",
     "static/js/2.0d83341c.chunk.js.LICENSE.txt": "/polls-react-app/static/js/2.0d83341c.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.bce9fcdc.js",
     "static/js/2.0d83341c.chunk.js",
     "static/css/main.adc8e47b.chunk.css",
-    "static/js/main.88573a3f.chunk.js"
+    "static/js/main.efce082a.chunk.js"
   ]
 }
