@@ -1,6 +1,9 @@
 # polls-react-app
 this web app lets you create polls and share them with your audience, this app was NOT created to be mobile responsive.
-[preview the live demo](https://kemoday.github.io/polls-react-app/)
+[preview the live demo](https://kemoday.github.io/polls-react-app/).
+you can use this user to sign in to the app:
+* email: JohnDoe@gmail.com
+* password: 12345678
 ## Technology 
 ### Frontend
 * ReactJs (a javascript library for building user interfaces)
