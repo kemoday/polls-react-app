@@ -1,7 +1,18 @@
 # polls-react-app
 this web app lets you create polls and share them with your audience, this app was NOT created to be mobile responsive.
-[preview the live demo](https://kemoday.github.io/polls-react-app/)
-
+[preview the live demo](https://kemoday.github.io/polls-react-app/).
+you can use this user to sign in to the app:
+* email: JohnDoe@gmail.com
+* password: 12345678
+## Technology 
+### Frontend
+* ReactJs (a javascript library for building user interfaces)
+* Tailwindcss (A utility-first CSS framework packed with classes)
+* SASS (CSS with superpowers)
+### Backend
+* NodeJs( A JavaScript runtime environment used for executing JavaScript code outside of a web browser)
+* MongoDB (NoSQL database)
+* Jsonwebtoken (JSON Web Token is an open, industry standard RFC 7519 method for representing claims securely between two parties)
 ## Pages
 ### Home Page
 ![alt text](https://raw.githubusercontent.com/kemoday/polls-react-app/main/images/1.png)
